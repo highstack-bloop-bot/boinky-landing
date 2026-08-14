@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Boinky avatar</title>
+  <defs><clipPath id="c"><circle cx="256" cy="256" r="256"/></clipPath></defs>
+  <g clip-path="url(#c)">
+    <circle cx="256" cy="256" r="256" fill="#FF5A3C"/>
+  <g transform="translate(256,314.667) scale(5.333333)">
+    <rect x="-38" y="-40" width="76" height="90" rx="36" fill="#FFCF2E"/>
+    <circle cx="-14" cy="-6" r="12" fill="#FFFFFF"/>
+    <circle cx="15" cy="-6" r="12" fill="#FFFFFF"/>
+    <circle cx="-11" cy="-2" r="6" fill="#0D0F14"/>
+    <circle cx="18" cy="-2" r="6" fill="#0D0F14"/>
+    <path d="M-11 16 q11 11 22 0" fill="none" stroke="#0D0F14" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  </g>
+</svg>
