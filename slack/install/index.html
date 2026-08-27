@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="noindex,nofollow">
+<title>Adding Boinky to Slack…</title>
+<!-- Point at the RELAY, never at slack.com directly: the relay mints the signed `state`
+     and supplies redirect_uri + the current client_id/scopes. A hand-written slack.com
+     link (see reverted commit bf10192) 400s in the relay's verifyState on callback. -->
+<meta http-equiv="refresh" content="0;url=https://relay.boinky.ai/slack/install">
+<link rel="icon" href="/brand/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/brand/boinky-avatar.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0b0a09;--ink:#f3f1ee;--ink-3:#87837d}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  html{background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+  body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px;
+       font-family:"Sora",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.5}
+  .wrap{text-align:center;max-width:420px}
+  p{color:var(--ink-3);margin:0 0 24px;font-size:15px}
+  .btn{display:inline-flex;align-items:center;gap:12px;padding:14px 20px;border-radius:10px;
+       font-weight:600;font-size:15px;line-height:1;letter-spacing:-.005em;text-decoration:none;
+       background:#fff;color:#1d1c1d;border:1px solid #fff;transition:transform .12s ease,background .15s}
+  .btn:hover{transform:translateY(-1px);background:#f4f4f5}
+  .btn svg{width:20px;height:20px;flex:0 0 20px}
+</style>
+<script>location.replace("https://relay.boinky.ai/slack/install");</script>
+</head>
+<body>
+  <div class="wrap">
+    <p>Taking you to Slack to add Boinky&hellip;</p>
+    <a class="btn" href="https://relay.boinky.ai/slack/install" aria-label="Add to Slack">
+      <svg viewBox="0 0 122.8 122.8" aria-hidden="true"><path fill="#e01e5a" d="M25.8 77.6a12.9 12.9 0 1 1-12.9-12.9h12.9v12.9zm6.5 0a12.9 12.9 0 0 1 25.8 0v32.3a12.9 12.9 0 1 1-25.8 0V77.6z"/><path fill="#36c5f0" d="M45.2 25.8a12.9 12.9 0 1 1 12.9-12.9v12.9H45.2zm0 6.5a12.9 12.9 0 0 1 0 25.8H12.9a12.9 12.9 0 1 1 0-25.8h32.3z"/><path fill="#2eb67d" d="M97 45.2a12.9 12.9 0 1 1 12.9 12.9H97V45.2zm-6.5 0a12.9 12.9 0 0 1-25.8 0V12.9a12.9 12.9 0 1 1 25.8 0v32.3z"/><path fill="#ecb22e" d="M77.6 97a12.9 12.9 0 1 1-12.9 12.9V97h12.9zm0-6.5a12.9 12.9 0 0 1 0-25.8h32.3a12.9 12.9 0 1 1 0 25.8H77.6z"/></svg>
+      Continue to Slack
+    </a>
+  </div>
+</body>
+</html>
