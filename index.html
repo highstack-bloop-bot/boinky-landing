@@ -81,6 +81,9 @@
   .btn-slack{background:#fff;color:#1d1c1d;border-color:#fff}
   .btn-slack:hover{transform:translateY(-1px);background:#f4f4f5}
   .btn-slack svg{width:20px;height:20px;flex:0 0 20px}
+  .btn-wa{background:#25d366;color:#0b1a10;border-color:#25d366}
+  .btn-wa:hover{transform:translateY(-1px);background:#1ebe5b}
+  .btn-wa svg{width:20px;height:20px;flex:0 0 20px}
   .btn-teams{background:transparent;color:var(--ink-4);border-color:var(--line);cursor:not-allowed}
   .btn-teams .teams-mark{width:20px;height:20px;flex:0 0 20px;opacity:.5}
   .btn-teams .soon{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-4);border:1px solid var(--line);padding:3px 6px;border-radius:4px;margin-left:2px}
@@ -477,6 +480,18 @@
           <a class="btn btn-slack" href="/slack/install" aria-label="Add to Slack">
             <svg viewBox="0 0 122.8 122.8" aria-hidden="true"><path fill="#e01e5a" d="M25.8 77.6a12.9 12.9 0 1 1-12.9-12.9h12.9v12.9zm6.5 0a12.9 12.9 0 0 1 25.8 0v32.3a12.9 12.9 0 1 1-25.8 0V77.6z"/><path fill="#36c5f0" d="M45.2 25.8a12.9 12.9 0 1 1 12.9-12.9v12.9H45.2zm0 6.5a12.9 12.9 0 0 1 0 25.8H12.9a12.9 12.9 0 1 1 0-25.8h32.3z"/><path fill="#2eb67d" d="M97 45.2a12.9 12.9 0 1 1 12.9 12.9H97V45.2zm-6.5 0a12.9 12.9 0 0 1-25.8 0V12.9a12.9 12.9 0 1 1 25.8 0v32.3z"/><path fill="#ecb22e" d="M77.6 97a12.9 12.9 0 1 1-12.9 12.9V97h12.9zm0-6.5a12.9 12.9 0 0 1 0-25.8h32.3a12.9 12.9 0 1 1 0 25.8H77.6z"/></svg>
             Invite Boinky to Slack
+          </a>
+          <!-- WHATSAPP NUMBER — SINGLE SOURCE OF TRUTH FOR THE WHOLE SITE.
+               The digits in the wa.me href below are the ONLY occurrence anywhere on the site.
+               Change them there and nowhere else. The default is the number the relay's own
+               pairing pages advertise (chat-relay/newcode.sh PHONE=, chat-relay/qr_watchdog.sh);
+               it is UNCONFIRMED against the account actually paired in production — verify with
+               a human before Catherine demos this. Kept in the href rather than a data-attribute
+               plus script so the CTA still works with JavaScript disabled. -->
+          <a class="btn btn-wa" href="https://wa.me/12063765636?text=Hi%20Boinky%2C%20I%27d%20like%20to%20see%20what%20you%20can%20do."
+             target="_blank" rel="noopener" aria-label="Message Boinky on WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Message Boinky on WhatsApp
           </a>
           <button class="btn btn-teams" type="button" disabled aria-disabled="true">
             <svg class="teams-mark" viewBox="0 0 32 32" aria-hidden="true"><path fill="#5059c9" d="M19 12h9.5a2.5 2.5 0 0 1 2.5 2.5V22a5 5 0 0 1-5 5 5 5 0 0 1-5-5V12z"/><circle cx="24.5" cy="7.5" r="3.5" fill="#5059c9"/><path fill="#7b83eb" d="M4 8h14a2 2 0 0 1 2 2v13a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8z"/><path fill="#fff" d="M14.4 13.2H7.6v1.9h2.4V22h1.9v-6.9h2.5z"/></svg>
